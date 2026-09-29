@@ -1,0 +1,30 @@
+# =============================================================================
+# Looper-Man Plan: Python Multifunction Calculator
+# 13 task, 4 phase — cocok buat test Looper-Man!
+# =============================================================================
+# Cara run:
+#   node looper.js -f plan-calculator.txt            (Rich UI mode)
+#   node looper.js -f plan-calculator.txt -v         (verbose mode)
+#   node looper.js -f plan-calculator.txt --dry-run  (cek dulu)
+# =============================================================================
+
+## Phase: Project Setup
+Bikin folder project calculator-py dengan struktur: src/, tests/, dan docs/
+Bikin file requirements.txt (tidak ada dependency eksternal, pure Python stdlib)
+Bikin file main.py sebagai entry point dengan shebang dan docstring
+Bikin file README.md dengan deskripsi project, fitur, dan cara pakai
+
+## Phase: Core Calculator Engine
+Bikin modul src/calculator.py dengan class Calculator yang punya method: add, subtract, multiply, divide, power, square_root, percentage, factorial
+Tambah validasi input: cegah division by zero, cegah sqrt bilangan negatif, cegah factorial bilangan negatif atau desimal
+Bikin modul src/history.py dengan class History — simpan semua kalkulasi dengan timestamp, method: add_entry, get_history, clear_history, get_last
+
+## Phase: CLI & Features
+Bikin modul src/cli.py — interactive REPL interface pake input() loop, support perintah: help, history, clear, exit, dan operasi matematika natural (contoh: "5 + 3", "sqrt 16", "fact 5", "10 % 200")
+Tambah fitur memory: simpan hasil terakhir di variabel ans, support operasi chaining seperti "ans * 2" untuk menggunakan hasil sebelumnya
+Tambah fitur unit conversion: konversi suhu (Celsius ↔ Fahrenheit), panjang (meter ↔ feet), berat (kg ↔ lbs) pake perintah "convert suhu 100 c to f", "convert panjang 5 m to ft"
+
+## Phase: Testing & Polish
+Bikin file tests/test_calculator.py — unit test pake unittest untuk semua method Calculator (minimal 3 test case per method), termasuk edge case division by zero dan sqrt negatif
+Bikin file tests/test_history.py — unit test untuk History class: test add, get, clear, get_last
+Bikin file tests/test_cli.py — integration test: simulate input user pake unittest.mock.patch untuk test beberapa skenario perhitungan

@@ -1,0 +1,5 @@
+node_modules/
+looper-logs/
+*.log
+looper-progress.json*
+*.tmp

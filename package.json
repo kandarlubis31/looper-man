@@ -1,0 +1,38 @@
+{
+  "name": "looper-man",
+  "version": "3.0.0",
+  "description": "Auto-pilot CLI for Freebuff — execute multiple AI coding tasks sequentially with context chaining, progress tracking, and resume support",
+  "main": "looper.js",
+  "type": "module",
+  "homepage": "https://github.com/username/looper-man",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/looper-man"
+  },
+  "bin": {
+    "looper": "./looper.js"
+  },
+  "scripts": {
+    "start": "node looper.js",
+    "dry": "node looper.js --file tasks.example.txt --dry-run -v",
+    "help": "node looper.js --help"
+  },
+  "keywords": [
+    "freebuff",
+    "loop",
+    "automation",
+    "cli",
+    "ai-coding",
+    "task-runner",
+    "code-generation",
+    "context-chaining"
+  ],
+  "author": "Looper-Man Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "node-pty": "^1.1.0"
+  }
+}

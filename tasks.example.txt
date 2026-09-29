@@ -1,0 +1,46 @@
+# =============================================================================
+# Looper-Man Task File — Template Full-Plan (21 task, 5 phase)
+# =============================================================================
+# FORMAT:
+#   ## Phase: Nama Phase     → section header (bukan task)
+#   # komentar                → diabaikan
+#   baris kosong              → diabaikan
+#   teks biasa                → 1 task
+# =============================================================================
+# TIPS:
+#   - Bikin task yang SPESIFIK & ACTIONABLE, bukan yang umum
+#   - Tambahin tech stack detail di task pertama
+#   - Phase bantu lo ngeliat progress per-bagian
+#   - Jangan pake bullet (-, *, 1.) — tiap baris udah 1 task
+# =============================================================================
+
+## Phase: Setup & Foundation
+Inisialisasi project Next.js dengan TypeScript dan App Router
+Setup Tailwind CSS, PostCSS, dan ESLint
+Bikin folder structure: src/app, src/components, src/lib, src/types
+Bikin layout utama dengan navbar dan footer
+
+## Phase: Authentication
+Implementasi login dengan NextAuth.js + GitHub provider
+Bikin halaman /login dan /register dengan form validasi
+Proteksi semua route /dashboard/* pake middleware
+Bikin session provider wrapper di layout
+
+## Phase: Database & API
+Setup Prisma dengan SQLite untuk development
+Bikin schema User, Post, Comment
+Bikin CRUD API di /api/posts
+Tambah validasi input dengan Zod
+
+## Phase: Core Features
+Bikin halaman dashboard dengan list posts user
+Bikin halaman create/edit post dengan rich text editor
+Bikin halaman public feed semua posts
+Tambah infinite scroll di feed
+
+## Phase: Polish & Deploy
+Tambah loading states (skeleton) di semua halaman
+Tambah error boundaries dan toast notifications
+Responsive design — mobile first
+Setup Vercel deploy dengan env variables
+Bikin README.md project yang proper
