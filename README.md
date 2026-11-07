@@ -3,10 +3,10 @@
 > **Auto-pilot CLI buat Freebuff** — lo tinggal bikin file plan, Looper-Man yang ngejalanin semua task satu per satu otomatis.
 
 <p align="center">
- <img src="https://img.shields.io/badge/version-3.0.0-blue?style=flat-square" alt="Version 3.0.0">
- <img src="https://img.shields.io/badge/node-%3E%3D18-green?style=flat-square" alt="Node >= 18">
- <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Mac%20%7C%20Linux-lightgrey?style=flat-square" alt="Platform">
- <img src="https://img.shields.io/badge/license-MIT-yellow?style=flat-square" alt="License MIT">
+  <img src="https://img.shields.io/badge/version-3.0.0-blue?style=flat-square" alt="Version 3.0.0">
+  <img src="https://img.shields.io/badge/node-%3E%3D18-green?style=flat-square" alt="Node >= 18">
+  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Mac%20%7C%20Linux-lightgrey?style=flat-square" alt="Platform">
+  <img src="https://img.shields.io/badge/license-MIT-yellow?style=flat-square" alt="License MIT">
 </p>
 
 ---
@@ -82,7 +82,7 @@ node looper.js --file tasks.example.txt
 
 ## Dokumentasi Lengkap
 
- **[USAGE.md](./USAGE.md)** — Panduan praktis lengkap:
+**[USAGE.md](./USAGE.md)** — Panduan praktis lengkap:
 - Instalasi (Windows, Mac, Linux)
 - Format file task (phase, komentar, best practices)
 - Semua opsi CLI dengan contoh
