@@ -1,17 +1,17 @@
-# 🦸 Looper-Man v3.0
+# Looper-Man v3.0
 
 > **Auto-pilot CLI buat Freebuff** — lo tinggal bikin file plan, Looper-Man yang ngejalanin semua task satu per satu otomatis.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-3.0.0-blue?style=flat-square" alt="Version 3.0.0">
-  <img src="https://img.shields.io/badge/node-%3E%3D18-green?style=flat-square" alt="Node >= 18">
-  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Mac%20%7C%20Linux-lightgrey?style=flat-square" alt="Platform">
-  <img src="https://img.shields.io/badge/license-MIT-yellow?style=flat-square" alt="License MIT">
+ <img src="https://img.shields.io/badge/version-3.0.0-blue?style=flat-square" alt="Version 3.0.0">
+ <img src="https://img.shields.io/badge/node-%3E%3D18-green?style=flat-square" alt="Node >= 18">
+ <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Mac%20%7C%20Linux-lightgrey?style=flat-square" alt="Platform">
+ <img src="https://img.shields.io/badge/license-MIT-yellow?style=flat-square" alt="License MIT">
 </p>
 
 ---
 
-## 🤔 Apa itu Looper-Man?
+## Apa itu Looper-Man?
 
 Looper-Man adalah CLI tool yang nge-loop Freebuff (AI coding agent) buat ngerjain **banyak task secara otomatis dan berurutan**.
 
@@ -27,23 +27,23 @@ Looper-Man adalah CLI tool yang nge-loop Freebuff (AI coding agent) buat ngerjai
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 | Fitur | Kenapa Penting |
 |-------|----------------|
-| 🖥️ **Rich Terminal UI** | Multi-line ANSI display — progress bar, per-phase status, elapsed timer, real-time ETA |
-| 🕐 **ETA Estimation** | Estimasi kapan semua task selesai berdasarkan rata-rata durasi task sebelumnya |
-| 🔗 **Context Chaining** | Freebuff di task #5 tau struktur project yang udah dibuat di task #1-#4 |
-| 📊 **Progress Tracking** | `looper-progress.json` — lo bisa cek status kapan aja |
-| 🔄 **Resume Mode** | Kalo crash/disconnect, tinggal `--resume` — lanjut dari yang terakhir |
-| 📂 **Phase Support** | Organize task per fase: Setup → Auth → API → Deploy |
-| 🛡️ **Session Guard** | Auto-detect & block kalo lo jalanin dari dalem Freebuff (biar gak crash) |
-| ⏱️ **Idle Detection** | Auto `/exit` kalo Freebuff udah 60 detik gak ada output |
-| 📝 **Verbose Logging** | Semua output Freebuff di-save ke file log |
+|  **Rich Terminal UI** | Multi-line ANSI display — progress bar, per-phase status, elapsed timer, real-time ETA |
+|  **ETA Estimation** | Estimasi kapan semua task selesai berdasarkan rata-rata durasi task sebelumnya |
+|  **Context Chaining** | Freebuff di task #5 tau struktur project yang udah dibuat di task #1-#4 |
+|  **Progress Tracking** | `looper-progress.json` — lo bisa cek status kapan aja |
+|  **Resume Mode** | Kalo crash/disconnect, tinggal `--resume` — lanjut dari yang terakhir |
+|  **Phase Support** | Organize task per fase: Setup → Auth → API → Deploy |
+|  **Session Guard** | Auto-detect & block kalo lo jalanin dari dalem Freebuff (biar gak crash) |
+|  **Idle Detection** | Auto `/exit` kalo Freebuff udah 60 detik gak ada output |
+|  **Verbose Logging** | Semua output Freebuff di-save ke file log |
 
 ---
 
-## 🚀 30-Second Quick Start
+## 30-Second Quick Start
 
 ```bash
 # 1. Buka terminal BARU (PowerShell / CMD / bash) — JANGAN dari dalem Freebuff!
@@ -80,9 +80,9 @@ node looper.js --file tasks.example.txt
 
 ---
 
-## 📖 Dokumentasi Lengkap
+## Dokumentasi Lengkap
 
-👉 **[USAGE.md](./USAGE.md)** — Panduan praktis lengkap:
+ **[USAGE.md](./USAGE.md)** — Panduan praktis lengkap:
 - Instalasi (Windows, Mac, Linux)
 - Format file task (phase, komentar, best practices)
 - Semua opsi CLI dengan contoh
@@ -94,7 +94,7 @@ node looper.js --file tasks.example.txt
 
 ---
 
-## 📝 Task File Format
+## Task File Format
 
 ```txt
 ## Phase: Setup
@@ -111,7 +111,7 @@ Implementasi login dengan NextAuth.js
 
 ---
 
-## ⚙️ Semua Opsi CLI
+## Semua Opsi CLI
 
 | Flag | Default | Keterangan |
 |------|---------|------------|
@@ -131,7 +131,7 @@ Implementasi login dengan NextAuth.js
 
 ---
 
-## 🗂️ Project Files
+## Project Files
 
 ```
 looper-man/
@@ -148,17 +148,17 @@ looper-man/
 
 ---
 
-## ⚠️ PENTING!
+## PENTING!
 
-> ### 🚫 JANGAN jalanin `node looper.js` dari DALEM sesi Freebuff!
+> ### JANGAN jalanin `node looper.js` dari DALEM sesi Freebuff!
 >
-> **✅ BENER:** Buka terminal BARU → `cd looper-man` → `node looper.js -f plan.txt`
+> **BENER:** Buka terminal BARU → `cd looper-man` → `node looper.js -f plan.txt`
 >
-> **❌ SALAH:** Ketik `node looper.js` di chat Freebuff yang lagi lo pake.
+> **SALAH:** Ketik `node looper.js` di chat Freebuff yang lagi lo pake.
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 | Problem | Solution |
 |---------|----------|
@@ -171,6 +171,14 @@ looper-man/
 
 ---
 
-## 📄 License
+## English
+
+**Looper-Man** is a CLI that drives Freebuff, an AI coding agent, through a plan file: you write the tasks once, and it runs them one after another without supervision.
+
+It is built for multi-task projects where each step takes 5-15 minutes, so the work continues while you are away from the keyboard.
+
+---
+
+## License
 
 MIT — feel free to use, modify, and distribute.
